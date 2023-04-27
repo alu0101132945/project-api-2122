@@ -1,0 +1,65 @@
+{
+  "name": "prac12",
+  "version": "1.0.0",
+  "description": "``` >>  PROYECTO: Un sistema de bibliteca musical >>  EQUIPO: Grupo_O >>  COMPONENTES: XueMei Lin >>               Noelia Ibáñez Silvestre >>               Andrea Hernandez Martín >>               Stephanie Andreína Arismendi Escobar >>               Carlos Pío Reyes >>  EMAIL:       alu0101225845@ull.edu.es >>               alu0101225555@ull.edu.es >>               alu0101119137@ull.edu.es >>               alu0101351728@ull.edu.es >>               alu0101132945@ull.edu.es >>  UNIVERSIDAD: Universidad de La Laguna >>  ASIGNATURA:  Desarrollo de Sistemas informáticos >>  VERSION:     1.0.0 ```",
+  "main": "index.js",
+  "scripts": {
+    "heroku-postbuild": "tsc",
+    "start": "node dist/index.js",
+    "test": "mocha",
+    "coverage": "nyc npm test && nyc report --reporter=lcov",
+    "doc": "typedoc --includes ./src/**/*.ts",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/express": "^4.17.13",
+    "@types/inquirer": "^8.2.1",
+    "@types/jest": "^27.4.1",
+    "@types/lowdb": "^1.0.11",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "chai": "^4.3.6",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "inquirer": "^8.2.2",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "require": "^0.4.4",
+    "ts-node": "^10.7.0",
+    "tsc-watch": "^4.6.2",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@inquirer/input": "^0.0.18-alpha.0",
+    "console-log-img": "^4.0.2",
+    "express": "^4.18.1",
+    "lowdb": "^1.0.0",
+    "mongodb": "^3.7.3",
+    "mongoose": "^5.13.14",
+    "prompt": "^1.2.2",
+    "scanf": "^1.1.2",
+    "typedoc": "^0.22.15"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct12-music-api-grupo-o.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct12-music-api-grupo-o/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct12-music-api-grupo-o#readme"
+}

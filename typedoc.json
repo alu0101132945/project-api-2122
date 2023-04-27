@@ -1,0 +1,14 @@
+{
+    "out": "./docs",
+    "entryPoints": [
+        "./src/db/mongoose.ts",
+        "./src/models/artista.ts",
+        "./src/models/cancion.ts",
+        "./src/models/playlist.ts",
+        "./src/routers/default.ts",
+        "./src/routers/delete.ts",
+        "./src/routers/get.ts",
+        "./src/routers/patch.ts",
+        "./src/routers/post.ts"
+    ]
+}
